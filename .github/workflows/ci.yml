@@ -3,6 +3,7 @@
 
 name: Java CI with Gradle
 
+#when the pipeline will be triggered
 on:
   push:
     branches: [ master ]
@@ -35,4 +36,4 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-         
+     
